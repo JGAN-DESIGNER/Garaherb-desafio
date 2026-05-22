@@ -1,0 +1,1366 @@
+/* ============================================================
+   MOBILE.CSS — Responsividade completa para GaraHerb / Kymezol
+   Inclua APÓS style.css no <head>:
+   <link rel="stylesheet" href="./mobile.css">
+============================================================ */
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║  MOBILE  ≤ 768px                                         ║
+   ╚══════════════════════════════════════════════════════════╝ */
+@media (max-width: 768px) {
+
+  /* ── RESET GLOBAL ── */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  /* Container de largura fixa → fluido */
+  .desktop {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Todas as seções saem do fluxo absoluto */
+  .hero, .preco, .sobre, .ingredients,
+  .beneficios, .depoimento, .frete,
+  .oferta, .faq, .barra-rodape, .footer {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Ordem visual das seções (Figma tinha ordem invertida) */
+  .hero        { order: 1; }
+  .preco       { order: 2; }
+  .sobre       { order: 3; }
+  .ingredients { order: 4; }
+  .beneficios  { order: 5; }
+  .depoimento  { order: 6; }
+  .frete       { order: 7; }
+  .oferta      { order: 8; }
+  .faq         { order: 9; }
+  .barra-rodape { order: 10; }
+  .footer      { order: 11; }
+
+  img { max-width: 100%; height: auto; }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 1 — HERO
+  ════════════════════════════════════════ */
+  .hero {
+    background: linear-gradient(160deg, #0b0b0b 0%, #1a0d0c 60%, #2a0e09 100%) !important;
+    padding: 80px 20px 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    min-height: auto !important;
+  }
+
+  /* Decorações absolutas que estouram a tela */
+  .hero .ellipse-1,
+  .hero .ellipse-5,
+  .hero .ellipse-6,
+  .hero .luz-2,
+  .hero .group-23662,
+  .hero .folha-1,
+  .hero .folha-12,
+  .hero .pill-capsule-o-03-2,
+  .hero .pill-capsule-o-03-4 { display: none !important; }
+
+  .content-main3 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    padding: 0 !important;
+    order: 1;
+  }
+
+  .frame-32, .frame-3, .frame-33 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .content { align-items: center !important; }
+
+  .titulo5 {
+    font-size: 28px !important;
+    line-height: 38px !important;
+    text-align: center !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .descri-o3 {
+    font-size: 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .frame-12 { align-items: center !important; width: 100% !important; }
+
+  .list-item2 {
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .group-2369 {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 24px 0 0 !important;
+    order: 0;
+  }
+
+  ._01-13 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 75% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  ._01-23 { display: none !important; }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 2 — PRECO
+  ════════════════════════════════════════ */
+  .preco {
+    background: #f5f5f5 !important;
+    padding: 40px 16px !important;
+  }
+
+  .frame-223 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 32px !important;
+  }
+
+  .frame-392 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .titulo4 {
+    font-size: 26px !important;
+    line-height: 34px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .select-the-package-that-fits-your-goals-and-save-more {
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .kits2 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 0 !important;
+  }
+
+  .kits2 .kit-1,
+  .kits2 .kit-2,
+  .kits2 .kit-4 {
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    min-height: unset !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .frame-126 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    padding: 20px 0 0 !important;
+  }
+
+  .frame-242 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    padding: 0 !important;
+  }
+
+  .line-4, .line-5, .line-6 { display: none !important; }
+
+  /* ════════════════════════════════════════
+     KITS (partilhado entre .kits e .kits2)
+  ════════════════════════════════════════ */
+  .kit-1, .kit-2, .kit-4 {
+    width: 100% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    min-height: unset !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    overflow: visible !important;
+    padding-bottom: 24px !important;
+  }
+
+  /* Área de imagem dos kits */
+  ._2, ._3, ._6 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: 200px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+    margin-bottom: 0 !important;
+  }
+
+  ._2 img, ._3 img, ._6 img {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    max-height: 180px !important;
+    width: auto !important;
+    max-width: 80% !important;
+    display: block !important;
+  }
+
+  /* Ajuste específico para as imagens sobrepostas dentro do kit */
+  ._6 ._01-4, ._6 ._01-22, ._6 ._01-3, ._6 ._03-1 {
+    position: absolute !important;
+  }
+
+  .frame-215, .frame-2152, .frame-2153 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+    align-items: center !important;
+    padding: 8px 16px !important;
+  }
+
+  .frame-43, .frame-44,
+  .frame-218, .frame-2182,
+  .frame-442 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+  }
+
+  .frame-219, .frame-2192, .frame-2193 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: fit-content !important;
+    margin: 4px auto 8px !important;
+  }
+
+  ._69-bottle, ._49-bottle, ._59-bottle {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  ._69-bottle-span, ._49-bottle-span, ._59-bottle-span {
+    font-size: 46px !important;
+  }
+
+  .frame-134, .frame-142 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frame-131, .frame-133, .frame-1342 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .frame-44, .frame-442 {
+    gap: 8px !important;
+    padding: 8px 0 !important;
+  }
+
+  .line-3 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+  }
+
+  .image-1 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 50px !important;
+    height: auto !important;
+  }
+
+  .pck-cards-1 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    max-width: 140px !important;
+    height: auto !important;
+  }
+
+  .group-6, .total-79-69 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 3 — SOBRE
+  ════════════════════════════════════════ */
+  .sobre {
+    padding: 40px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .ellipse-4 { display: none !important; }
+
+  .freepik-expand-31980-1 {
+    width: 90% !important;
+    max-width: 360px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .content-main2 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    padding: 0 !important;
+  }
+
+  .titulo3 {
+    font-size: 26px !important;
+    line-height: 36px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .descri-o2 {
+    font-size: 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .image-12 { display: none !important; }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 4 — INGREDIENTS
+  ════════════════════════════════════════ */
+  .ingredients {
+    padding: 40px 16px !important;
+  }
+
+  .box {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+    height: auto !important;
+  }
+
+  .conteudo3 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    height: auto !important;
+    text-align: center !important;
+  }
+
+  .every-capsula-of-garaherb-contains {
+    font-size: 24px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .an-optimally-dosed-proprietary-blend-of-synbiotics-carefully-mixed-to-complement-one-another-into-a-on-of-a-kind-powerful-gut-supporting-formula {
+    width: 100% !important;
+    font-size: 15px !important;
+    text-align: center !important;
+  }
+
+  .itens {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    height: auto !important;
+  }
+
+  .item-43, .item-7, .item-8,
+  .item-9, .item-10, .item-11 {
+    width: 100% !important;
+    max-width: 340px !important;
+    height: auto !important;
+    min-height: 130px !important;
+    padding: 16px 20px 16px 16px !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .item-43 .frame-23, .item-7 .frame-23,
+  .item-8 .frame-23, .item-9 .frame-23,
+  .item-10 .frame-23, .item-11 .frame-23 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: auto !important;
+    flex: 1 !important;
+  }
+
+  .ig-1, .ig-2, .ig-3, .ig-32, .ig-4, .ig-42 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    transform: none !important;
+    width: 48px !important;
+    height: 48px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .frame-13 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 32px !important;
+    height: auto !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 5 — BENEFICIOS
+  ════════════════════════════════════════ */
+  .beneficios {
+    padding: 40px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0 !important;
+  }
+
+  .group-2366, .mask-group2, .copia-de-garaherb-1-1 {
+    display: none !important;
+  }
+
+  ._01-12 {
+    width: 70% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    display: block !important;
+    margin: 0 auto 24px !important;
+  }
+
+  .content-main {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .titulo2 {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .list-item {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 6 — DEPOIMENTOS
+  ════════════════════════════════════════ */
+  .depoimento {
+    padding: 40px 16px !important;
+  }
+
+  .conteudo2 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 0 !important;
+    margin-bottom: 24px !important;
+  }
+
+  .over-150-000-men-reported-better-sexual-performance-using-garaherb {
+    font-size: 22px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .frame-2648 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+  }
+
+  .frame-2647 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+  }
+
+  ._1, ._22, ._32, ._4 {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    min-height: unset !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    padding: 16px !important;
+  }
+
+  .dep-1, .dep-2, .dep-3, .dep-4 {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    top: 0 !important; left: 0 !important;
+    display: block !important;
+    border-radius: 8px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .today-i-can-satisfy-her-in-bed-every-night-and-we-are-more-in-love-than-ever {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 100% !important;
+    font-size: 15px !important;
+    margin: 0 0 12px !important;
+  }
+
+  .line-21 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    margin: 8px 0 !important;
+  }
+
+  .michael-r-52-years-old {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    padding: 0 !important;
+  }
+
+  .frame-1 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    height: auto !important;
+    margin-top: 8px !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 7 — FRETE
+  ════════════════════════════════════════ */
+  .frete {
+    padding: 28px 16px !important;
+  }
+
+  .frame-1332 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .shipping-1 {
+    width: 120px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .frame-132 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    text-align: center !important;
+  }
+
+  .every-6-bottle-order-gets-free-shipping-too {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  ._97-of-customers-order-6-bottles-our-recommended-option {
+    font-size: 14px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 8 — OFERTA
+  ════════════════════════════════════════ */
+  .oferta {
+    padding: 0 0 40px !important;
+  }
+
+  .header-pre-o {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    padding: 24px 16px !important;
+  }
+
+  .frame-109 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 100% !important;
+    height: auto !important;
+    align-items: center !important;
+  }
+
+  .take-advantage-of-this-limited-offer-to-stock-up-on-feilaira-while-supplies-last {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center !important;
+    line-height: 28px !important;
+  }
+
+  .kits {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 20px 16px !important;
+    height: auto !important;
+  }
+
+  /* Garantia */
+  .guarantee {
+    width: 90% !important;
+    max-width: 380px !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    margin: 24px auto 0 !important;
+    height: auto !important;
+    padding: 24px !important;
+  }
+
+  .frame-1483 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 16px !important;
+  }
+
+  .conteudo {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .titulo {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+  }
+
+  .descri-o {
+    font-size: 14px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .selo { display: none !important; }
+
+  /* Reviews / trust badges na oferta */
+  .frame-39 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 24px 16px 0 !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+
+  .our-customers-say {
+    width: 100% !important;
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+
+  .frame-36 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .based-on-38-204-reviews {
+    font-size: 14px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .frame-25 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    padding: 20px 16px !important;
+    height: auto !important;
+  }
+
+  .frame-20, .frame-22, .frame-24, .frame-252 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .garaherb-1 {
+    width: 80% !important;
+    max-width: 300px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 9 — FAQ
+  ════════════════════════════════════════ */
+  .faq {
+    padding: 40px 0 !important;
+  }
+
+  .frame-168 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 0 16px !important;
+    height: auto !important;
+  }
+
+  .frame-166 {
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .frequently-asked-questions {
+    font-size: 26px !important;
+    line-height: 34px !important;
+    width: 100% !important;
+  }
+
+  .frame-167 {
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .item-1, .item-2, .item-3, .item-4, .item-5 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    height: auto !important;
+  }
+
+  .how-should-i-take-it,
+  .are-there-any-restrictions,
+  .is-it-safe,
+  .when-will-i-notice-results,
+  .what-is-blinzador {
+    font-size: 17px !important;
+    text-align: left !important;
+  }
+
+  .faq .button {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    margin: 24px auto 0 !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 10 — BARRA RODAPÉ
+  ════════════════════════════════════════ */
+  .barra-rodape {
+    height: auto !important;
+    padding: 16px !important;
+  }
+
+  .frame-62 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 100% !important;
+  }
+
+  .frame-61 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px 14px !important;
+  }
+
+  .terms-conditions, .privacy-policy, .contact,
+  .disclaimer, .reference, .refund, .shipping {
+    font-size: 13px !important;
+  }
+
+  /* ════════════════════════════════════════
+     SEÇÃO 11 — FOOTER
+  ════════════════════════════════════════ */
+  .footer {
+    padding: 24px 16px !important;
+    height: auto !important;
+  }
+
+  /* Classe enorme do disclaimer */
+  .these-statements-have-not-been-evaluated-by-the-food-and-drug-administration-this-product-is-not-intended-to-diagnose-treat-cure-or-prevent-any-disease-the-information-provided-on-this-site-is-for-informational-purposes-only-and-is-not-intended-as-a-substitute-for-advice-from-your-physician-or-other-health-care-professional-or-any-information-contained-on-or-in-any-product-label-or-packaging-you-should-not-use-the-information-on-this-site-for-diagnosis-or-treatment-of-any-health-problem-or-for-prescription-of-any-medication-or-other-treatment-you-should-consult-with-a-healthcare-professional-before-starting-any-diet-exercise-or-supplementation-program-before-taking-any-medication-or-if-you-have-or-suspect-you-might-have-a-health-problem {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .footer2 {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    margin-top: 20px !important;
+  }
+
+  .frame-67 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    align-items: center !important;
+    padding: 12px 0 !important;
+  }
+
+  .copyright-2024-kymezol-all-rights-reserved,
+  .kymezol-labs-llc-401-ryland-st-ste-200-a-reno-nv-89502 {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+
+  /* ════════════════════════════════════════
+     BOTÕES — touch-friendly
+  ════════════════════════════════════════ */
+  .button {
+    padding: 16px 28px !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    justify-content: center !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    min-height: 56px !important;
+  }
+
+  .order-now { font-size: 17px !important; }
+
+  /* ════════════════════════════════════════
+     COUNTDOWN
+  ════════════════════════════════════════ */
+  #offer-countdown {
+    flex-wrap: wrap !important;
+    padding: 10px 16px !important;
+    gap: 8px !important;
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important;
+    translate: none !important;
+  }
+
+  .cd-num { font-size: 22px !important; }
+  .cd-label { font-size: 13px !important; }
+
+  /* ════════════════════════════════════════
+     ITEMS GENÉRICOS (item-12, item-13, etc.)
+  ════════════════════════════════════════ */
+  .item-12 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  .item-13, .item-22, .item-32, .item-42, .item-52 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ════════════════════════════════════════
+     FRAME-148 (badge +2 BONUS / +1 BONUS)
+  ════════════════════════════════════════ */
+  .frame-148, .frame-1482 {
+    position: absolute !important;
+    top: 8px !important;
+    right: 8px !important;
+    left: auto !important;
+    z-index: 5 !important;
+  }
+
+  /* VIP badge */
+  .frame-2642 {
+    position: absolute !important;
+    top: 8px !important;
+    left: 8px !important;
+    right: auto !important;
+    z-index: 5 !important;
+  }
+
+} /* fim @media max-width: 768px */
+
+
+/* ╔══════════════════════════════════════════════════════════╗
+   ║  TABLET  769px – 1200px                                  ║
+   ╚══════════════════════════════════════════════════════════╝ */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .desktop {
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero, .preco, .sobre, .ingredients,
+  .beneficios, .depoimento, .frete,
+  .oferta, .faq, .barra-rodape, .footer {
+    width: 100% !important;
+    position: relative !important;
+    left: 0 !important;
+    top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .hero        { order: 1; }
+  .preco       { order: 2; }
+  .sobre       { order: 3; }
+  .ingredients { order: 4; }
+  .beneficios  { order: 5; }
+  .depoimento  { order: 6; }
+  .frete       { order: 7; }
+  .oferta      { order: 8; }
+  .faq         { order: 9; }
+  .barra-rodape { order: 10; }
+  .footer      { order: 11; }
+
+  /* Kits em grid 2 colunas */
+  .kits, .kits2 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 24px !important;
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    padding: 24px !important;
+    height: auto !important;
+  }
+
+  .kit-1, .kit-2, .kit-4 {
+    width: 44% !important;
+    min-width: 280px !important;
+    max-width: 400px !important;
+    height: auto !important;
+    min-height: unset !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .frame-242 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+    justify-content: center !important;
+    height: auto !important;
+  }
+
+  .frame-2647 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+  }
+
+  ._1, ._22, ._32, ._4 {
+    width: 44% !important;
+    min-width: 200px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+  }
+
+  .frame-223, .content-main3, .content-main2,
+  .content-main, .frame-168 {
+    width: 90% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+  }
+
+  .box {
+    width: 90% !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+
+  .itens {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    height: auto !important;
+    gap: 20px !important;
+  }
+
+  .item-43, .item-7, .item-8,
+  .item-9, .item-10, .item-11 {
+    width: 44% !important;
+    min-width: 220px !important;
+    height: auto !important;
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+  }
+
+  .ig-1, .ig-2, .ig-3, .ig-32, .ig-4, .ig-42 {
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .frame-1332 {
+    position: relative !important;
+    left: auto !important; top: auto !important;
+    translate: none !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+  }
+
+  .line-4, .line-5, .line-6 { display: none !important; }
+
+} /* fim tablet */
+
+/* ============================================================
+   CORREÇÃO — Alinhamento do preço dentro dos kits
+   O frame-44 (kit-1) tem position:absolute top:581px no desktop
+   → precisa ser resetado para fluir dentro do card no mobile
+============================================================ */
+@media (max-width: 768px) {
+
+  /* Kits: overflow visible para nada sair do card */
+  .kit-1, .kit-2, .kit-4 {
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 0 0 24px !important;
+  }
+
+  /* frame-44 é o container de preço/botão do kit-1 — era absolute top:581px */
+  .frame-44 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin: 12px auto 0 !important;
+  }
+
+  /* frame-442 (kit-2 e kit-4) já é relative, mas garantir */
+  .frame-442 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  /* line-3: era absolute dentro do frame-44 */
+  .line-3 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 80% !important;
+    transform: none !important;
+  }
+
+  /* Imagem do botão de pagamento */
+  .image-1 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+
+  /* Bandeiras dos cartões */
+  .pck-cards-1 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+
+  /* Container do total */
+  .group-6 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  /* Texto TOTAL: $79 $69 */
+  .total-79-69 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    translate: none !important;
+    text-align: center !important;
+    font-size: 18px !important;
+    width: 100% !important;
+  }
+
+  /* frame-43: preço + checklist do kit-1 */
+  .frame-43 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+    margin: 0 auto !important;
+    height: auto !important;
+  }
+
+  /* frame-217: preço + checklist dos kit-2/kit-4 */
+  .frame-217 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  /* frame-218 e frame-2182: wrapper geral de preço nos kit-2/kit-4 */
+  .frame-218, .frame-2182 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  /* frame-134: checklist do kit-1 */
+  .frame-134 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  /* frame-142: lista de benefícios dos kits */
+  .frame-142 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 6px !important;
+  }
+
+  .frame-131, .frame-133, .frame-1342 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  /* frame-215/2152/2153: título do kit (X BOTTLE / Y Day Supply) */
+  .frame-215, .frame-2152, .frame-2153 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 16px 6px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* frame-219/2192/2193: badge (Starter/Best Seller/Standard) */
+  .frame-219, .frame-2192, .frame-2193 {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 8px 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+}
